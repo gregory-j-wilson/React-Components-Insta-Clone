@@ -6,7 +6,7 @@ import PostHeader from './PostHeader';
 
 const Post = props => {
   // Make sure the parent of Post is passing the right props!
-  const { post, likePost } = props
+  const { post, likePost2 } = props
 
   return (
     <div className='post-border'>
@@ -22,7 +22,7 @@ const Post = props => {
         />
       </div>
       {/* LikeSection is missing a prop it needs to function! */}
-      <LikeSection likePost={() => likePost(post.id)} />
+      <LikeSection likePost3={() => likePost2(post.id)} likeCount={post.likes} />
       {/* Comments also wants its props! */}
       <Comments />
     </div>
