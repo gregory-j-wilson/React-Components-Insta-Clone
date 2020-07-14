@@ -11,8 +11,8 @@ const Posts = (props) => {
       {/* map through the posts here to return a Post component */}
       {/* Check the implementation of Post to see what props it requires! */}
       {
-        posts.map(post => {
-          return <Post post={post} likePost2={likePost}/>
+        posts.map((post, index) => {
+          return <Post post={post} likePost2={likePost} key={index} />
         })
       } 
 
